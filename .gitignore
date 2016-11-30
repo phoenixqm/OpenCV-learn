@@ -2,3 +2,5 @@ CMakeFiles
 */node_modules
 */CMakeFiles
 .vscode
+*/build
+*/*.pyc
