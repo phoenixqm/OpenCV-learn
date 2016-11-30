@@ -1,0 +1,15 @@
+{
+  "name": "test-opencv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tesseract.js",
+  "dependencies": {
+    "node-tesseract": "^0.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
