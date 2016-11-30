@@ -1,7 +1,13 @@
 var tesseract = require('node-tesseract');
 
+var options1 = {
+    l: 'eng',
+    psm: 6,
+    binary: '/usr/local/bin/tesseract'
+};
+
 // Recognize text of any language in any format
-tesseract.process(__dirname + '/china.jpg',function(err, text) {
+tesseract.process(__dirname + '/1.png', options1, function(err, text) {
     if(err) {
         console.error(err);
     } else {
@@ -14,10 +20,10 @@ tesseract.process(__dirname + '/china.jpg',function(err, text) {
 var options = {
     l: 'eng',
     psm: 6,
-    binary: '/opt/local/bin/tesseract'
+    binary: '/usr/local/bin/tesseract'
 };
 
-tesseract.process(__dirname + '/china.jpg', options, function(err, text) {
+tesseract.process(__dirname + '/2.png', options, function(err, text) {
     if(err) {
         console.error(err);
     } else {
