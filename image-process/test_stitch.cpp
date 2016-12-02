@@ -28,20 +28,23 @@ int main()
     // vImg.push_back( imread("S4.jpg"));
     // vImg.push_back( imread("S5.jpg"));
     // vImg.push_back( imread("S6.jpg"));
-    
-    vImg.push_back( imread("stitching_img/m1.jpg"));
-    vImg.push_back( imread("stitching_img/m2.jpg"));
-    vImg.push_back( imread("stitching_img/m3.jpg"));
-    vImg.push_back( imread("stitching_img/m4.jpg"));
-    vImg.push_back( imread("stitching_img/m5.jpg"));
-    vImg.push_back( imread("stitching_img/m6.jpg"));
-    vImg.push_back( imread("stitching_img/m7.jpg"));
-    vImg.push_back( imread("stitching_img/m8.jpg"));
-    vImg.push_back( imread("stitching_img/m9.jpg"));
-    vImg.push_back( imread("stitching_img/m10.jpg"));
-    vImg.push_back( imread("stitching_img/m11.jpg"));
-    vImg.push_back( imread("stitching_img/m12.jpg"));
-    vImg.push_back( imread("stitching_img/m13.jpg"));
+
+    // vImg.push_back( imread("stitching_img/m1.jpg"));
+    // vImg.push_back( imread("stitching_img/m2.jpg"));
+    // vImg.push_back( imread("stitching_img/m3.jpg"));
+    // vImg.push_back( imread("stitching_img/m4.jpg"));
+    // vImg.push_back( imread("stitching_img/m5.jpg"));
+    // vImg.push_back( imread("stitching_img/m6.jpg"));
+    // vImg.push_back( imread("stitching_img/m7.jpg"));
+    // vImg.push_back( imread("stitching_img/m8.jpg"));
+    // vImg.push_back( imread("stitching_img/m9.jpg"));
+    // vImg.push_back( imread("stitching_img/m10.jpg"));
+    // vImg.push_back( imread("stitching_img/m11.jpg"));
+    // vImg.push_back( imread("stitching_img/m12.jpg"));
+    // vImg.push_back( imread("stitching_img/m13.jpg"));
+
+    vImg.push_back( imread("stitching_img/C1.jpg"));
+    vImg.push_back( imread("stitching_img/C2.jpg"));
 
 
 	Stitcher stitcher = Stitcher::createDefault(1);
