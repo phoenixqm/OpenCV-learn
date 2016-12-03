@@ -7,6 +7,8 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 # Instruct CMake to run moc automatically when needed.
 set(CMAKE_AUTOMOC ON)
 
+set(CMAKE_AUTOUIC ON)
+
 # Find the QtWidgets library
 find_package(Qt5Core)
 find_package(Qt5Gui)
@@ -15,9 +17,9 @@ find_package(Qt5Widgets)
 find_package( OpenCV )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
-# Tell CMake to create the helloworld executable
-add_executable(helloworld main.cpp)
+# Tell CMake to create the executable
+add_executable(sift_detect main.cpp siftdetect.cpp utils.c sift.c imgfeatures.c)
 
 # Use the Widgets module from Qt 5.
-target_link_libraries(helloworld Qt5::Core Qt5::Gui Qt5::Widgets)
-target_link_libraries(helloworld ${OpenCV_LIBS} )
+target_link_libraries(sift_detect Qt5::Core Qt5::Gui Qt5::Widgets)
+target_link_libraries(sift_detect ${OpenCV_LIBS} )
