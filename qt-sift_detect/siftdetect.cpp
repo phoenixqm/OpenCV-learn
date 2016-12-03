@@ -65,7 +65,7 @@ void SiftDetect::on_openButton_clicked()
     cvSaveImage( "../src.jpg", img );
     // imwrite( "../src.jpg", src );
     ui->textBrowser->clear();
-    ui->textBrowser->setFixedSize( img->width, img->height );
+    // ui->textBrowser->setFixedSize( img->width, img->height );
     ui->textBrowser->append( "<img src=../src.jpg>" );
 
 }
@@ -73,7 +73,10 @@ void SiftDetect::on_openButton_clicked()
 void SiftDetect::on_detectButton_clicked()
 {
 
-    n = _sift_features( img, &features, intvls, sigma, contr_thr, curv_thr, img_dbl, descr_width, descr_hist_bins );
+    n = _sift_features( img, &features, intvls, sigma, 
+                        contr_thr, curv_thr, img_dbl, 
+                        descr_width, descr_hist_bins );
+    
     if ( display )
     {
         draw_features( img, features, n );

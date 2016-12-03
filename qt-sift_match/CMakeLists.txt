@@ -18,8 +18,8 @@ find_package( OpenCV )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 # Tell CMake to create the executable
-add_executable(sift_detect main.cpp siftmatch.cpp utils.c sift.c imgfeatures.c kdtree.c minpq.c xform.c)
+add_executable(sift_match main.cpp siftmatch.cpp utils.c sift.c imgfeatures.c kdtree.c minpq.c xform.c)
 
 # Use the Widgets module from Qt 5.
-target_link_libraries(sift_detect Qt5::Core Qt5::Gui Qt5::Widgets)
-target_link_libraries(sift_detect ${OpenCV_LIBS} )
+target_link_libraries(sift_match Qt5::Core Qt5::Gui Qt5::Widgets)
+target_link_libraries(sift_match ${OpenCV_LIBS} )

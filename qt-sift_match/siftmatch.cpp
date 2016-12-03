@@ -45,7 +45,7 @@ void SiftMatch::on_openButton_clicked()
             img1 = cvLoadImage( img_name.toLatin1().data() );
 
             imwrite( "../src1.jpg", src1 );
-            ui->textBrowser->setFixedSize( src1.cols, src1.rows );
+            // ui->textBrowser->setFixedSize( src1.cols, src1.rows );
             ui->textBrowser->append( "<img src=../src1.jpg>" );
          }
 
@@ -53,9 +53,9 @@ void SiftMatch::on_openButton_clicked()
         {
             src2 = imread( img_name.toLatin1().data() );
             img2 = cvLoadImage( img_name.toLatin1().data() );
-         //   img2 = &src2.operator IplImage();
+            // img2 = &src2.operator IplImage(); not work in opencv 3
             imwrite( "../src2.jpg", src2 );
-            ui->textBrowser->setFixedSize( src2.cols+src1.cols, src2.rows+src1.rows );
+            // ui->textBrowser->setFixedSize( src2.cols+src1.cols, src2.rows+src1.rows );
             ui->textBrowser->append( "<img src=../src2.jpg>" );
         }
     else
@@ -128,7 +128,7 @@ void SiftMatch::on_matchButton_clicked()
     // imwrite( "../dst.jpg", dst );
     cvSaveImage("../dst.jpg", stacked);
     ui->textBrowser->clear();
-    ui->textBrowser->setFixedSize( stacked->width, stacked->height );
+    // ui->textBrowser->setFixedSize( stacked->width, stacked->height );
     ui->textBrowser->append("<img src=../dst.jpg>");
 
 }
