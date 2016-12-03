@@ -1,0 +1,10 @@
+
+代码来自于 https://robwhess.github.io/opensift/
+以及Blog: http://blog.csdn.net/masibuaa/article/details/9246493
+
+根目录下的Makefile是原来的，适配Qt4.
+
+本实验将代码移植到OpenCV3+Qt5. 在macOS下编译实验，使用CMake生成Makefile。
+
+系统必须安装opencv，OpenCV的路径是cmake自动搜索的。
+安装Qt5, vim cmakeline.sh 设置具体的Qt路径。后面的步骤你懂的
