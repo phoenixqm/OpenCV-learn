@@ -18,9 +18,7 @@ Copyright (C) 2006-2010  Rob Hess <hess@eecs.oregonstate.edu>
 #ifndef KDTREE_H
 #define KDTREE_H
 
-/*
-    为了兼容c++，加入的语句
-*/
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -115,9 +113,7 @@ De-allocates memory held by a kd tree
 */
 extern void kdtree_release( struct kd_node* kd_root );
 
-/*
-    为了兼容c++，加入的语句
-*/
+
 #ifdef __cplusplus
 }
 #endif

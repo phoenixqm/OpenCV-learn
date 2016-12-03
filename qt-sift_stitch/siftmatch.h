@@ -2,9 +2,9 @@
 #define SIFTMATCH_H
 
 #include <QDialog>
-#include <opencv/cv.h>
-#include <opencv/cxcore.h>
-#include <opencv/highgui.h>
+// #include <opencv/cv.h>
+// #include <opencv/cxcore.h>
+// #include <opencv/highgui.h>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
@@ -23,7 +23,7 @@ public:
     explicit SiftMatch(QWidget *parent = 0);
     ~SiftMatch();
 
-    void CalcFourCorner();//¼ÆËãÍ¼2µÄËÄ¸ö½Ç¾­¾ØÕóH±ä»»ºóµÄ×ø±ê
+    void CalcFourCorner();  //è®¡ç®—å›¾2çš„å››ä¸ªè§’ç»è¿‡çŸ©é˜µHå˜æ¢åçš„åæ ‡
     
 private slots:
     void on_openButton_clicked();
@@ -39,35 +39,35 @@ private slots:
 private:
     Ui::SiftMatch *ui;
 
-    int open_image_number;//´ò¿ªÍ¼Æ¬¸öÊı
-    QString name1,name2;//Á½ÕÅÍ¼Æ¬µÄÎÄ¼şÃû
-    IplImage *img1, *img2;//IplImage¸ñÊ½µÄÔ­Í¼
-    IplImage *img1_Feat, *img2_Feat;//»­ÉÏÌØÕ÷µãÖ®ºóµÄÍ¼
+    int open_image_number;          //æ‰“å¼€å›¾ç‰‡çš„ä¸ªæ•°
+    QString name1,name2;            //æ‰“å¼€å›¾ç‰‡çš„æ–‡ä»¶å
+    IplImage *img1, *img2;          //IplImageæ ¼å¼çš„åŸå›¾
+    IplImage *img1_Feat, *img2_Feat;//ç”»ä¸Šç‰¹å¾ä¹‹åçš„å›¾
 
-    bool verticalStackFlag;//ÏÔÊ¾Æ¥Åä½á¹ûµÄºÏ³ÉÍ¼ÏñÖĞ£¬Á½ÕÅÍ¼ÊÇ×İÏòÅÅÁĞµÄ±êÖ¾
-    IplImage *stacked;//ÏÔÊ¾Æ¥Åä½á¹ûµÄºÏ³ÉÍ¼Ïñ£¬ÏÔÊ¾¾­¾àÀë±ÈÖµ·¨É¸Ñ¡ºóµÄÆ¥Åä½á¹û
-    IplImage *stacked_ransac;//ÏÔÊ¾Æ¥Åä½á¹ûµÄºÏ³ÉÍ¼Ïñ£¬ÏÔÊ¾¾­RANSACËã·¨É¸Ñ¡ºóµÄÆ¥Åä½á¹û
+    bool verticalStackFlag;         //æ˜¾ç¤ºç»“æœçš„æ—¶å€™æ˜¯å¦çºµå‘æ’åˆ—
+    IplImage *stacked;              //ç»è¿‡è·ç¦»æ¯”å€¼ç­›é€‰åçš„åŒ¹é…ç»“æœ
+    IplImage *stacked_ransac;       //ç»RANSACç®—æ³•ç­›é€‰ä¹‹åçš„ç»“æœ
 
-    struct feature *feat1, *feat2;//feat1£ºÍ¼1µÄÌØÕ÷µãÊı×é£¬feat2£ºÍ¼2µÄÌØÕ÷µãÊı×é
-    int n1, n2;//n1:Í¼1ÖĞµÄÌØÕ÷µã¸öÊı£¬n2£ºÍ¼2ÖĞµÄÌØÕ÷µã¸öÊı
-    struct feature *feat;//Ã¿¸öÌØÕ÷µã
-    struct kd_node *kd_root;//k-dÊ÷µÄÊ÷¸ù
-    struct feature **nbrs;//µ±Ç°ÌØÕ÷µãµÄ×î½üÁÚµãÊı×é
+    struct feature *feat1, *feat2;  //ç‰¹å¾ç‚¹æ•°ç»„
+    int n1, n2;                     //ç‰¹å¾ç‚¹ä¸ªæ•°
+    struct feature *feat;           //ç‰¹å¾ç‚¹çš„æŒ‡é’ˆ
+    struct kd_node *kd_root;        //kdtreeçš„å“
+    struct feature **nbrs;          //å½“å‰ç‚¹æœ€è¿‘é‚»æ•°ç»„
 
-    CvMat * H;//RANSACËã·¨Çó³öµÄ±ä»»¾ØÕó
-    struct feature **inliers;//¾«RANSACÉ¸Ñ¡ºóµÄÄÚµãÊı×é
-    int n_inliers;//¾­RANSACËã·¨É¸Ñ¡ºóµÄÄÚµã¸öÊı,¼´feat2ÖĞ¾ßÓĞ·ûºÏÒªÇóµÄÌØÕ÷µãµÄ¸öÊı
+    CvMat * H;                      //RANSACç®—æ³•æ±‚å‡ºçš„å˜æ¢çŸ©é˜µ
+    struct feature **inliers;       //ç»RANSACç®—æ³•ç­›é€‰ä¹‹åçš„å†…ç‚¹æ•°ç»„
+    int n_inliers;                  //ç»RANSACç®—æ³•ç­›é€‰ä¹‹åçš„å†…ç‚¹ä¸ªæ•°
 
-    IplImage *xformed;//ÁÙÊ±Æ´½ÓÍ¼£¬¼´Ö»½«Í¼2±ä»»ºóµÄÍ¼
-    IplImage *xformed_simple;//¼òÒ×Æ´½ÓÍ¼
-    IplImage *xformed_proc;//´¦ÀíºóµÄÆ´½ÓÍ¼
+    IplImage *xformed;              //ä¸´æ—¶æ‹¼æ¥å›¾ï¼Œåªå°†å›¾2å˜æ¢åçš„å›¾
+    IplImage *xformed_simple;       //ç®€æ˜“æ‹¼æ¥å›¾
+    IplImage *xformed_proc;         //å¤„ç†åçš„æ‹¼æ¥å›¾
 
-//    int img1LeftBound;//Í¼1ÖĞÆ¥ÅäµãÍâ½Ó¾ØĞÎµÄ×ó±ß½ç
-//    int img1RightBound;//Í¼1ÖĞÆ¥ÅäµãÍâ½Ó¾ØĞÎµÄÓÒ±ß½ç
-//    int img2LeftBound;//Í¼2ÖĞÆ¥ÅäµãÍâ½Ó¾ØĞÎµÄ×ó±ß½ç
-//    int img2RightBound;//Í¼2ÖĞÆ¥ÅäµãÍâ½Ó¾ØĞÎµÄÓÒ±ß½ç
+//    int img1LeftBound;            //åŒ¹é…ç‚¹å¤–æ¥ä¸¾è¡Œçš„å·¦å³è¾¹ç•Œ
+//    int img1RightBound;           //
+//    int img2LeftBound;            //
+//    int img2RightBound;           //
 
-    //Í¼2µÄËÄ¸ö½Ç¾­¾ØÕóH±ä»»ºóµÄ×ø±ê
+    //å›¾2çš„å››ä¸ªè§’ç»è¿‡çŸ©é˜µHå˜æ¢åçš„åæ ‡
     CvPoint leftTop,leftBottom,rightTop,rightBottom;
 
 
