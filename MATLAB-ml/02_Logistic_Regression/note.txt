@@ -1,0 +1,5 @@
+
+For algorithms in this class, y is 0 or 1 data.
+
+the cost function can be derived from MLE.
+
