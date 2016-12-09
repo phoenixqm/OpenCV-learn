@@ -35,13 +35,16 @@ J = zeros(MAX_ITR, 1);
 for i = 1:MAX_ITR
     % Calculate the hypothesis function
     z = x * theta;
+
     h = g(z);   % z to logistic 
     
     % Calculate gradient and hessian.
     % The formulas below are equivalent to the summation formulas
     % given in the lecture videos.
     grad = (1/m).*x' * (h-y);   % grad as a vector
+
     H = (1/m).*x' * diag(h) * diag(1-h) * x; % hessian a matrix
+    H
     
     % Calculate J (for testing convergence)
     J(i) =(1/m)*sum(-y.*log(h) - (1-y).*log(1-h)); % J a vector
