@@ -4,3 +4,7 @@ CMakeFiles
 .vscode
 */build
 */*.pyc
+
+pedestrian/data
+pedestrian/dbEval/data-ETH
+pedestrian/dbEval/data-USA
