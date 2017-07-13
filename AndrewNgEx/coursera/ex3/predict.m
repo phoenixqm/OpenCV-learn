@@ -21,9 +21,23 @@ p = zeros(size(X, 1), 1);
 %       can use max(A, [], 2) to obtain the max for each row.
 %
 
+% % debug:
+% size(Theta1)
+% size(Theta2)
+% size(X)
 
+X = [ones(size(X,1),1), X];
 
+a2 = sigmoid(Theta1 * X')';
 
+a2 = [ones(size(a2,1),1), a2];
+
+h = sigmoid(Theta2 * a2')';
+
+% [Y,I] = max(X) returns the indices of the maximum values in vector I.
+% [Y,I] = max(X,[],DIM) operates along the dimension DIM.
+
+[~,p] = max(h, [], 2);
 
 
 

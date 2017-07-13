@@ -31,7 +31,12 @@ X = [ones(m, 1) X];
 %       
 
 
+h = sigmoid(X * all_theta');
 
+% [Y,I] = max(X) returns the indices of the maximum values in vector I.
+% [Y,I] = max(X,[],DIM) operates along the dimension DIM.
+
+[~,p] = max(h, [], 2);
 
 
 
