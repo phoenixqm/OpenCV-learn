@@ -19,10 +19,17 @@ grad = zeros(size(theta));
 %               You should set J to the cost and grad to the gradient.
 %
 
+% this already done outside function call
+% X = [ones(m,1), X];
 
+h = X * theta;
+err = h - y;
+teeta = theta;
+teeta(1) = 0;
 
+J = (err' * err + lambda * (teeta' * teeta)) / (2*m);
 
-
+grad = X'*err / m + lambda * teeta / m;
 
 
 

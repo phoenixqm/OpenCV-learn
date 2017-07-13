@@ -15,6 +15,13 @@ X_poly = zeros(numel(X), p);
 %
 % 
 
+XI = X;
+
+for k = 1:p
+    X_poly(:,k) = XI;
+    XI = XI.*X;
+end
+    
 
 
 
