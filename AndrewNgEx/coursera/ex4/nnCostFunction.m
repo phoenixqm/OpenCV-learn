@@ -62,18 +62,100 @@ Theta2_grad = zeros(size(Theta2));
 %               and Theta2_grad from Part 2.
 %
 
+% Part 1:
 
+Y = zeros(m, num_labels);
 
+for k = 1:num_labels
+    Y(:,k) = (y==k);
+end
 
+A1 = [ones(size(X,1),1), X];
 
+A2 = sigmoid(Theta1 * A1')';
 
+A2 = [ones(size(A2,1),1), A2];
 
+H = sigmoid(Theta2 * A2')';
 
+C = log(H) .* Y + log(1-H) .* (1-Y);
 
+A = - sum(sum(C,2)) / m;
 
+Theta1_reg = Theta1;
+Theta1_reg(:,1) = 0;
+Theta2_reg = Theta2;
+Theta2_reg(:,1) = 0;
 
+B = (sum(sum(Theta1_reg.^2)) + sum(sum(Theta2_reg.^2))) * lambda * 0.5/m;
 
+J = A + B;
 
+% Part 2:
+
+Delta1 = zeros(size(Theta1));
+Delta2 = zeros(size(Theta2));
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % begin the for loop version:
+% for l = 1:m
+%     
+%     x = X(l,:)';
+%     a1 = [1;x];
+%     y = Y(l,:)';
+%     z2 = Theta1 * a1;
+%     a2 = sigmoid(z2);
+%     a2 = [1;a2];
+%     z3 = Theta2 * a2;
+%     a3 = sigmoid(z3);
+%     delta3 = a3-y;
+%     
+%     delta2 = Theta2'*delta3 .* a2 .* (1-a2);
+%     
+%     % first delta is useless:
+%     % delta1 = Theta1'*delta2 .* a1 .* (1-a1);
+% 
+% %     % debug:
+% %     sizeDelta1 = size(Delta1);
+% %     sizeDelta1
+% %     
+% %     sizeDelta2 = size(Delta2);
+% %     sizeDelta2
+% %     
+% %     sizedelta3 = size(delta3);
+% %     sizedelta3
+% %     
+% %     size_a2 = size(a2);
+% %     size_a2
+% %     
+% %     sizedelta2 = size(delta2);
+% %     sizedelta2
+% %     
+% %     size_a1 = size(a1);
+% %     size_a1    
+%     
+%     
+%     Delta2 = Delta2 + delta3 * a2';
+%     Delta1 = Delta1 + delta2(2:end) * a1';
+% end
+%
+% Theta1_grad = Delta1/m + lambda*Theta1_reg/m;
+% Theta2_grad = Delta2/m + lambda*Theta2_reg/m;
+% % % end of the for loop version
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The Matrix Version:
+
+delta3 = H - Y;
+
+delta2 = delta3 * Theta2 .* (A2 .* (1-A2));
+delta2 = delta2(:,2:end);
+
+Delta2 = delta3' * A2;
+Delta1 = delta2' * A1;
+
+Theta1_grad = Delta1/m + lambda*Theta1_reg/m;
+Theta2_grad = Delta2/m + lambda*Theta2_reg/m;
 
 
 
