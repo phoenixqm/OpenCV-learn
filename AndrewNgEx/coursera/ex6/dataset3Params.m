@@ -23,10 +23,36 @@ sigma = 0.3;
 %        mean(double(predictions ~= yval))
 %
 
+TryC = [0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30];
+TrySigma = [0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30];
 
+maxPredCount = 0;
+maxCi = 0;
+maxSi = 0;
 
+for ci = 1:length(TryC)
+    for si = 1:length(TrySigma)
 
+        model= svmTrain(X, y, TryC(ci), @(x1, x2) gaussianKernel(x1, x2, TrySigma(si))); 
+        
+        predictions = svmPredict(model, Xval);
+        predCount = sum(predictions == yval);
+        %predCount
+        
+        if (predCount > maxPredCount) 
+            maxPredCount = predCount;
+            maxCi = ci;
+            maxSi = si;
+        end
+        
+    end
+end
+        
+C = TryC(maxCi);
+sigma = TrySigma(maxSi);
 
+%C
+%sigma
 
 
 % =========================================================================
