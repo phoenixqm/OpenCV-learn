@@ -21,8 +21,19 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
+m = size(X,1);
 
-
+for i = 1:m
+    Tx = repmat(X(i,:),K,1);  % reshape x
+    
+    Tx = Tx - centroids;    % 
+    
+    Tx = sum(Tx.^2,2);      % calc dist
+    
+    [~,the] = min(Tx);      % find the largest
+    
+    idx(i) = the;           % save to array
+end
 
 
 
