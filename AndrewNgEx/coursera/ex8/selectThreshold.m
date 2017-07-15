@@ -25,8 +25,29 @@ for epsilon = min(pval):stepsize:max(pval)
 
 
 
-
-
+    P = pval < epsilon;
+    TP = P & yval;
+    TN = ~P & ~yval;
+    FP = P & ~yval;
+    FN = ~P & yval;
+    
+    
+    p = sum(P);
+    tp = sum(TP);
+    fp = sum(FP);
+    tn = sum(TN);
+    fn = sum(FN);
+    
+    
+    precision = tp / p;
+    recall = tp / sum(yval);
+    
+    F1 = 2*precision*recall/(precision+recall);
+    
+    if F1 > bestF1
+        bestF1 = F1;
+        bestEpsilon = epsilon;
+    end
 
 
 
