@@ -1,5 +1,5 @@
 % This function trains a neural network language model.
-function [model] = train(epochs, learning_rate, numhid1, numhid2, momentum)
+function [model] = train_best(epochs)
 % Inputs:
 %   epochs: Number of epochs to run.
 % Output:
@@ -17,11 +17,10 @@ end
 % SET HYPERPARAMETERS HERE.
 batchsize = 100;  % Mini-batch size.
 
-% now get parameters rate from argument
-% learning_rate = 0.1;  % Learning rate; default = 0.1.
-% numhid1 = 50;    % Dimensionality of embedding space; default = 50.
-% numhid2 = 200;   % Number of units in hidden layer; default = 200.
-% momentum = 0.9;  % Momentum; default = 0.9.
+learning_rate = 0.1;  % Learning rate; default = 0.1.
+numhid1 = 50;    % Dimensionality of embedding space; default = 50.
+numhid2 = 200;   % Number of units in hidden layer; default = 200.
+momentum = 0.9;  % Momentum; default = 0.9.
 
 init_wt = 0.01;  % Standard deviation of the normal distribution
                  % which is sampled to get the initial weights; default = 0.01
