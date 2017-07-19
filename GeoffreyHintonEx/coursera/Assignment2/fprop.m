@@ -34,6 +34,7 @@ function [embedding_layer_state, hidden_layer_state, output_layer_state] = ...
 %     vocab_size X batchsize
 %
 
+
 [numwords, batchsize] = size(input_batch);
 [vocab_size, numhid1] = size(word_embedding_weights);
 numhid2 = size(embed_to_hid_weights, 2);
@@ -44,6 +45,8 @@ embedding_layer_state = reshape(...
   word_embedding_weights(reshape(input_batch, 1, []),:)',...
   numhid1 * numwords, []);
 
+% size(embedding_layer_state)
+
 %% COMPUTE STATE OF HIDDEN LAYER.
 % Compute inputs to hidden units.
 inputs_to_hidden_units = embed_to_hid_weights' * embedding_layer_state + ...
@@ -52,18 +55,22 @@ inputs_to_hidden_units = embed_to_hid_weights' * embedding_layer_state + ...
 % Apply logistic activation function.
 % FILL IN CODE. Replace the line below by one of the options.
 hidden_layer_state = zeros(numhid2, batchsize);
+
 % Options
 % (a) hidden_layer_state = 1 ./ (1 + exp(inputs_to_hidden_units));
 % (b) hidden_layer_state = 1 ./ (1 - exp(-inputs_to_hidden_units));
-% (c) hidden_layer_state = 1 ./ (1 + exp(-inputs_to_hidden_units));
+% (c) is courrent
+hidden_layer_state = 1 ./ (1 + exp(-inputs_to_hidden_units));
 % (d) hidden_layer_state = -1 ./ (1 + exp(-inputs_to_hidden_units));
 
 %% COMPUTE STATE OF OUTPUT LAYER.
 % Compute inputs to softmax.
 % FILL IN CODE. Replace the line below by one of the options.
 inputs_to_softmax = zeros(vocab_size, batchsize);
+
 % Options
-% (a) inputs_to_softmax = hid_to_output_weights' * hidden_layer_state +  repmat(output_bias, 1, batchsize);
+% (a) is courrent
+inputs_to_softmax = hid_to_output_weights' * hidden_layer_state +  repmat(output_bias, 1, batchsize);
 % (b) inputs_to_softmax = hid_to_output_weights' * hidden_layer_state +  repmat(output_bias, batchsize, 1);
 % (c) inputs_to_softmax = hidden_layer_state * hid_to_output_weights' +  repmat(output_bias, 1, batchsize);
 % (d) inputs_to_softmax = hid_to_output_weights * hidden_layer_state +  repmat(output_bias, batchsize, 1);
