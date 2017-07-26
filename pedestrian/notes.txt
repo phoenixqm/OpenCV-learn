@@ -1,0 +1,66 @@
+
+
+
+1) what features it used, where is the code:
+
+1a) How its data organized, read from datafile?
+first channel 84*28 Y-channel
+
+
+1b) how did they get the features from data?
+
+
+In code, it read from mat file.
+
+2) what nn structure it used, where is the code:
+
+2a) what's the parameter of the nn structure 
+
+2b) what is the over all cost they define?
+3b-2) what's the regulation term in the cost function?
+
+3) what kind trainning speedup method it used:
+
+3a) what is training mini-batch size, learning rate, momentum factor?
+
+3a-2) Can I make it better by just change the parameters?
+
+3b) what regulation method are they using?
+
+3c) how did they tell when to end the training?
+
+
+
+4) what dataset it running on, how is the result.
+
+4b) Is there any overfit/underfit problems?
+
+
+5) what it compared with, on what part it is better?
+
+
+
+6) can I use it as a whole to setup a proto app?
+
+
+domain specific question:
+
+
+
+progressive questions:
+
+What restriction/deficiency this method have?
+
+Can I add more features that help?
+
+Can I use a deeper/flexable network structure?
+
+Can I use method that it learns faster?
+
+Can I ...
+
+
+
+
+
+

@@ -199,8 +199,74 @@ function ret = d_loss_by_d_model(model, data, wd)
   % This is the only function that you're expected to change. Right now, 
   % it just returns a lot of zeros, which is obviously not the correct output. 
   % Your job is to replace that by a correct computation.
+  
   ret.input_to_hid = model.input_to_hid * 0;
   ret.hid_to_class = model.hid_to_class * 0;
+  
+  % model.input_to_hid is a matrix of size n_hid by #input i.e. 256. 
+  % It contains the weights from the input units to the hidden units.
+  
+  % model.hid_to_class is a matrix of size #classes i.e. 10 by n_hid
+  % It contains the weights from the hidden units to the softmax units.
+  
+  % data.inputs is a matrix of size #inputs i.e. 256 by #cases. 
+  % Each column describes a different data case. 
+  
+  % data.targets is a matrix of size #classes i.e. 10 by #cases. 
+  % Each column describes a different data case. It contains a one-of-N 
+  % encoding of the class, i.e. one element in column is 1 and others are 0.
+	 
+  % Before we can calculate the loss, we need to calculate a variety of 
+  % intermediate values, like the state of the hidden units.
+  
+  % input to the hidden units, i.e. before the logistic. 
+  % size: <number of hidden units> by <number of data cases>
+  hid_input = model.input_to_hid * data.inputs; 
+  
+  % output of the hidden units, i.e. after the logistic. 
+  % size: <number of hidden units> by <number of data cases>
+  hid_output = logistic(hid_input); 
+  
+  % input to the components of the softmax. 
+  % size: <number of classes, i.e. 10> by <number of data cases>
+  class_input = model.hid_to_class * hid_output; 
+  
+  % The following three lines of code implement the softmax.
+  % However, it's written differently from what the lectures say.
+  % What we do here is equivalent, but this is more numerically stable. 
+  % Octave isn't well prepared to deal with really large numbers.
+  class_normalizer = log_sum_exp_over_rows(class_input); % size: 1 by #cases
+  
+  % log of probability of each class. 
+  % size: <number of classes, i.e. 10> by <number of data cases>
+  log_class_prob = class_input - repmat(class_normalizer, [size(class_input, 1), 1]); 
+  
+  % probability of each class. Each column (i.e. each case) sums to 1. 
+  % size: <number of classes, i.e. 10> by <number of data cases>
+  class_prob = exp(log_class_prob); 
+  
+  m = size(data.inputs, 2);
+  
+  % Z2 = Theta1 * X
+  % A2 = sigmoid(Z2)
+  % O = Theta2 * A2
+  % P = softmax(O)
+  
+  % dLdTheta2 = dLdO * dOdTheta2 + lambda * Theta2
+  %           = (P-Y) * A2          % sum for every case
+  % dLdTheta1 = dLdO * dOdA2 * dA2dZ2 * dZ2dTheta1 + lambda * Theta1
+  %           = (P-Y) * Theta2 * A2(1-A2) * X
+  
+  % Delta3 = (P-Y)
+  Delta3 = class_prob - data.targets;
+  
+  dLdTheta2 = Delta3 * hid_output';
+  ret.hid_to_class = (1/m) .* dLdTheta2 + wd * model.hid_to_class;
+  
+  % Delta2 = (P-Y) * Theta2 * A2(1-A2)
+  Delta2 = (model.hid_to_class' * Delta3) .* hid_output .* (1-hid_output);
+  dLdTheta1 = Delta2 * data.inputs';
+  ret.input_to_hid = (1/m) .* dLdTheta1 + wd * model.input_to_hid;
 end
 
 function ret = model_to_theta(model)
