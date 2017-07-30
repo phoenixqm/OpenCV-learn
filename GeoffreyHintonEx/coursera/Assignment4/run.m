@@ -1,3 +1,5 @@
+%% do assignment init
+a4_init
 
 %% test function visible_state_to_hidden_probabilities
 describe_matrix(visible_state_to_hidden_probabilities(test_rbm_w, data_1_case));
@@ -53,6 +55,11 @@ for i = 1:20
     lrs = lrs+0.01;
 end
 % ans 0.09 with test set classification error 0.065889
+
+%% test run the best parameter
+a4_main(300, .02, 0.09, 1000);
+
+
 
 %% clac partition function on small_test_rbm_w
 % this answer ref http://www.hankcs.com/ml/nnml-rbm.html
