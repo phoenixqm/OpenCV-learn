@@ -1,4 +1,4 @@
-function ret = cd1(rbm_w, visible_data)
+function ret = cd1_improved(rbm_w, visible_data)
 % <rbm_w> is a matrix <number of hidden units> by <number of visible units>
 % <visible_data> is a (possibly but not necessarily binary) matrix of size
 %  <number of visible units> by <number of data cases>
@@ -29,6 +29,22 @@ it gives rise to. That gives us the direction of changing the weights that will
 make the reconstruction have greater goodness, so we want to go in the opposite
 direction, because we want to make the reconstruction have less goodness.
 
+----- NOW IMPROVE IT -------------
+If you go through the math (either on your own on with your fellow students 
+on the forum), you'll see that sampling the hidden state that results from 
+the "reconstruction" visible state is useless: it does not change the expected 
+value of the gradient estimate that CD-1 produces; it only increases its 
+variance. More variance means that we have to use a smaller learning rate, 
+and that means that it'll learn more slowly; in other words, we don't want 
+more variance, especially if it doesn't give us anything pleasant to compensate 
+for that slower learning. Let's modify the CD-1 implementation to simply no 
+longer do that sampling at the hidden state that results from the "reconstruction" 
+visible state. Instead of a sampled state, we'll simply use the conditional 
+probabilities. Of course, the configuration goodness gradient function expects 
+a binary state, but you've probably already implemented it in such a way that 
+it can gracefully take probabilities instead of binary states. If not, now 
+would be a good time to do that. 
+
 %}
 
 vs0 = sample_bernoulli(visible_data);
@@ -39,10 +55,10 @@ vp1 = 1./(exp(-rbm_w' * hs1)+1);
 vs1 = sample_bernoulli(vp1);
 
 hp2 = 1./(exp(-rbm_w * vs1)+1);
-hs2 = sample_bernoulli(hp2);
+% hs2 = sample_bernoulli(hp2);
 
 d1 = configuration_goodness_gradient(vs0, hs1);
-d2 = configuration_goodness_gradient(vs1, hs2);
+d2 = configuration_goodness_gradient(vs1, hp2);
 
 ret = d1 - d2;
 
