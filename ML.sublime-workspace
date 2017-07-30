@@ -1,0 +1,1278 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"log",
+				"enable_log"
+			],
+			[
+				"pan",
+				"panZoom"
+			],
+			[
+				"last",
+				"lastCommandKey"
+			],
+			[
+				"lastC",
+				"lastCommandValue"
+			],
+			[
+				"set",
+				"setupInfoEvent"
+			],
+			[
+				"info",
+				"infoDiv"
+			],
+			[
+				"material_e",
+				"material_weather_h_"
+			],
+			[
+				"ca",
+				"cameraMove"
+			],
+			[
+				"sc",
+				"scene"
+			],
+			[
+				"trans",
+				"translation"
+			],
+			[
+				"getE",
+				"getElementById"
+			],
+			[
+				"sav",
+				"save_x1"
+			],
+			[
+				"the",
+				"theta"
+			],
+			[
+				"up",
+				"updateCenter"
+			],
+			[
+				"cm",
+				"command"
+			],
+			[
+				"upd",
+				"updateCenterSample"
+			],
+			[
+				"lo",
+				"lockZoom"
+			],
+			[
+				"rot",
+				"rotRot"
+			],
+			[
+				"tr",
+				"tranUpdown"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"line",
+				"lineElem"
+			],
+			[
+				"tran",
+				"translation"
+			],
+			[
+				"hid",
+				"hideAllAircrafts"
+			],
+			[
+				"clone",
+				"cloneNode"
+			],
+			[
+				"h",
+				"head\tTag"
+			],
+			[
+				"pr",
+				"printCircledNumber"
+			],
+			[
+				"Si",
+				"SimNode"
+			],
+			[
+				"Ma",
+				"MaxSize"
+			],
+			[
+				"Out",
+				"OutOfBound"
+			],
+			[
+				"Win",
+				"Winner"
+			],
+			[
+				"I",
+				"Initialize"
+			],
+			[
+				"G",
+				"Graph"
+			],
+			[
+				"be",
+				"begin"
+			],
+			[
+				"V",
+				"Vcount"
+			],
+			[
+				"ad",
+				"adjIterator"
+			],
+			[
+				"fire",
+				"fireMouseEvent"
+			],
+			[
+				"par",
+				"parentNode"
+			],
+			[
+				"M",
+				"MH643"
+			],
+			[
+				"view",
+				"viewpointchanged"
+			],
+			[
+				"ri",
+				"rightVec"
+			],
+			[
+				"A",
+				"AxisAngleToQuaternion"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"rotat",
+				"rotateVec"
+			],
+			[
+				"new",
+				"newStr"
+			],
+			[
+				"la",
+				"lookatMouseLastX"
+			],
+			[
+				"al",
+				"alert"
+			],
+			[
+				"ge",
+				"gestureType"
+			],
+			[
+				"las",
+				"lastGestureType"
+			],
+			[
+				"this",
+				"thisTouchTick"
+			],
+			[
+				"lookat",
+				"lookatMouseUp"
+			],
+			[
+				"zoo",
+				"zoomLock"
+			],
+			[
+				"zo",
+				"zoomLock"
+			],
+			[
+				"left",
+				"leftMoving"
+			],
+			[
+				"del",
+				"delta"
+			],
+			[
+				"can",
+				"canvas"
+			],
+			[
+				"app",
+				"applyOrientation"
+			],
+			[
+				"VP_L",
+				"VP_LOOKAT_FACTOR_Y"
+			],
+			[
+				"VP_O",
+				"VP_LOOKAT_FACTOR_X"
+			],
+			[
+				"res",
+				"resetView"
+			],
+			[
+				"pos",
+				"posStr"
+			],
+			[
+				"appl",
+				"applyX3DZoom"
+			],
+			[
+				"rig",
+				"right_touchstart"
+			],
+			[
+				"is",
+				"isExchange"
+			],
+			[
+				"ba",
+				"background-repeat"
+			],
+			[
+				"border-s",
+				"border-spacing"
+			],
+			[
+				"ac",
+				"AcDict"
+			],
+			[
+				"flig",
+				"flight_no"
+			],
+			[
+				"fl",
+				"flight_no"
+			],
+			[
+				"pare",
+				"parentNode"
+			],
+			[
+				"focu",
+				"focusInfo"
+			],
+			[
+				"he",
+				"heading"
+			],
+			[
+				"spd",
+				"speed"
+			],
+			[
+				"ed",
+				"editCell"
+			],
+			[
+				"htm",
+				"innerHTML"
+			],
+			[
+				"hi",
+				"highlight"
+			],
+			[
+				"editS",
+				"editScroll"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"el",
+				"elem"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"f",
+				"font-weight"
+			],
+			[
+				"P",
+				"POINTER_OFFSET_Y"
+			],
+			[
+				"O",
+				"POINTER_OFFSET_X"
+			],
+			[
+				"TABLE",
+				"table"
+			],
+			[
+				"get",
+				"getBoundingClientRect"
+			],
+			[
+				"re",
+				"remove"
+			],
+			[
+				"off",
+				"off_x"
+			],
+			[
+				"sel",
+				"select"
+			],
+			[
+				"foc",
+				"focusCellEditElem"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"edi",
+				"editSpd"
+			],
+			[
+				"of",
+				"off_x"
+			],
+			[
+				"m",
+				"mymousedown"
+			],
+			[
+				"hold",
+				"holdDragStart"
+			],
+			[
+				"ke",
+				"keyCode"
+			],
+			[
+				"select",
+				"selectAll"
+			],
+			[
+				"se",
+				"select"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"ck",
+				"click"
+			],
+			[
+				"s",
+				"split"
+			],
+			[
+				"i",
+				"inherit"
+			],
+			[
+				"c",
+				"clientX"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"box",
+				"boxCloseWhenInactiveWaitTime"
+			],
+			[
+				"clo",
+				"closeWhenInactiveWaitTime"
+			],
+			[
+				"cl",
+				"closeWhenInactive"
+			],
+			[
+				"fs",
+				"fsIFrame"
+			],
+			[
+				"key",
+				"keydown"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"boix",
+				"boxHeight"
+			],
+			[
+				"init",
+				"initRelated"
+			],
+			[
+				"C",
+				"cloudpdf"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"tes",
+				"test_pdf"
+			],
+			[
+				"pdf",
+				"pdf_page"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"BA",
+				"background-color"
+			],
+			[
+				"close",
+				"closeAllBox"
+			],
+			[
+				"dom",
+				"domains"
+			],
+			[
+				"Com",
+				"company"
+			],
+			[
+				"block",
+				"BlockManager"
+			],
+			[
+				"In",
+				"InfoView"
+			],
+			[
+				"un",
+				"undefined"
+			],
+			[
+				"input",
+				"input_date"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"do_",
+				"do_merge_csv"
+			],
+			[
+				"j",
+				"join"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "pedestrian-cv/pedestrian-cv.py",
+			"settings":
+			{
+				"buffer_size": 1929,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 36 files for \"cnnbp\" (case sensitive)\n\nC:\\Users\\qiming\\phoenixqm\\!Github\\OpenCV-learn\\pedestrian\\CNN\\cnnbp.m:\n    1: function net = cnnbp(net, y)\n    2      n = numel(net.layers);\n    3  \n\nC:\\Users\\qiming\\phoenixqm\\!Github\\OpenCV-learn\\pedestrian\\CNN\\cnntrain.m:\n   47          net.batchl = l;\n   48          net = cnnff(net, batch_x);\n   49:         net = cnnbp(net, batch_y);\n   50          net = cnnapplygrads(net, opts);\n   51          targetout(:, OutsIdx+1:OutsIdx+opts.batchsize) = net.o;\n\n2 matches across 2 files\n\n\nSearching 36 files for \"deformation\" (case sensitive)\n\n0 matches",
+			"settings":
+			{
+				"buffer_size": 598,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "pedestrian/CNN/cnntrain.m",
+			"settings":
+			{
+				"buffer_size": 3349,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pedestrian/CNN/cnntest.m",
+			"settings":
+			{
+				"buffer_size": 216,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pedestrian/CNN/cnnff.m",
+			"settings":
+			{
+				"buffer_size": 5507,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pedestrian/CNN/cnnexamples.m",
+			"settings":
+			{
+				"buffer_size": 2900,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pedestrian/dbEval/dbEval_new_CaltechTrain.m",
+			"settings":
+			{
+				"buffer_size": 38389,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"last_filter": "Pretty JSON",
+		"selected_items":
+		[
+			[
+				"Pretty JSON",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"install\t",
+				"Package Control: Install Package"
+			],
+			[
+				"fol",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"fold",
+				"Code Folding: Unfold All"
+			],
+			[
+				"Inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 209.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/qiming/phoenixqm/!Github/OpenCV-learn",
+		"/C/Users/qiming/phoenixqm/!Github/OpenCV-learn/pedestrian",
+		"/C/Users/qiming/phoenixqm/!Github/OpenCV-learn/pedestrian/CNN",
+		"/C/Users/qiming/phoenixqm/!Github/OpenCV-learn/pedestrian/data",
+		"/C/Users/qiming/phoenixqm/!Github/OpenCV-learn/pedestrian/dbEval",
+		"/C/Users/qiming/phoenixqm/!Github/OpenCV-learn/pedestrian/model",
+		"/C/Users/qiming/phoenixqm/!Github/OpenCV-learn/pedestrian-cv"
+	],
+	"file_history":
+	[
+		"/F/CS-Books/AI/课程笔记-习题答案/Hinton coursera课程/train.m",
+		"/C/Users/qiming/phoenixqm/!Github/OpenCV-learn/pedestrian/CNN/cnnexample.log",
+		"/C/Users/qiming/phoenixqm/!Github/OpenCV-learn/GeoffreyHintonEx/coursera/Assignment2/train.m",
+		"/C/Users/qiming/AppData/Roaming/Sublime Text 3/Packages/GoSublime/USAGE.md",
+		"/C/Demos/HTML5/ATMRI/DataServer/data_server/mysite2/settings.py",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/infohandler.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/interaction3d.js",
+		"/C/Demos/HTML5/ATMRI/DataServer/data_server/.gitignore",
+		"/C/Demos/HTML5/ATMRI/.gitignore",
+		"/C/Demos/HTML5/ATMRI/DataServer/data_server/myapp/views.py",
+		"/C/Demos/HTML5/ATMRI/RadarServer/server.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/radar3d.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/css/surface3dv2.css",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/map3D.html",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/surface3dv2.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/log_2017-6-8_7657.txt",
+		"/C/Demos/HTML5/ATMRI/RadarServer/log_2017-6-8_72922.txt",
+		"/C/Demos/HTML5/ATMRI/RadarServer/log_2017-6-8_7121.txt",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/css/radar3d.css",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/js/radar3d.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/map3D-strips.html",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/css/strips/sidebar.css",
+		"/I/Demos/HTML5/ATMRI_FYP/public/map3D.html",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/x3dom/IDMMod_x3dom_1.7.1_debug.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/lagecy.js",
+		"/C/Users/qiming/AppData/Roaming/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/C/Users/qiming/Downloads/Neural-Turing-Machines-master/code/ntm_v2.py",
+		"/C/Demos/HTML5/NetworkViz/20041.json",
+		"/C/Demos/HTML5/NetworkViz/20042.json",
+		"/C/Demos/HTML5/NetworkViz/20040.json",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/js/interaction3d.js",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/js/surface3dv2.js",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/css/surface.css",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/css/surface3dv2.css",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/surface.html",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/js/surface.js",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/map3D.html",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/js/infohandler.js",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/map.html",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/js/radar2d.js",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/js/lagecy.js",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/leapcontrol.html",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/server.js",
+		"/W/Temp_mqi/AmpotechDashboard/test.html",
+		"/E/CS-source/Ruby/jekyll/script/bootstrap",
+		"/E/CS-source/Ruby/jekyll/script/branding",
+		"/C/Users/qiming/Downloads/mxhr/mxhr.js",
+		"/C/Demos/HTML5/ATMRI_master/DataServer/data_server/mysite2/settings.py",
+		"/C/Demos/HTML5/ATMRI_master/DataServer/data_server/mysite2/settings_production.py",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/js/leapclient.js",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/js/leapmotion/leapjs-master/lib/frame.js",
+		"/C/Users/qiming/phoenixqm/chromium/html5/978-1-4302-3864-5_Ch12-offline-web-apps-code/tracker.appcache",
+		"/C/Users/qiming/phoenixqm/chromium/html5/978-1-4302-3864-5_Ch12-offline-web-apps-code/tracker.html",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/css/radar3d.css",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/css/radar2d.css",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/data/IFP.xml",
+		"/C/Demos/HTML5/ATMRI_master/RadarServer/public/surface3dv2.html",
+		"/C/Demos/HTML5/ATMRI_master/launch-surface3d.bat",
+		"/C/Demos/HTML5/ATMRI_master/launch-surface2d.bat",
+		"/C/Demos/HTML5/ATMRI_master/launch-radar2d.bat",
+		"/C/Demos/HTML5/ATMRI_master/launch-radar3d.bat",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/data2d.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/vpdata.js",
+		"/I/Demos/HTML5/ATMRI/RadarServer/public/js/radar3d.js",
+		"/C/Users/qiming/AppData/Roaming/Sublime Text 3/Packages/JSLint/JSLint.sublime-settings",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/surface3d.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/surface3dv3.js",
+		"/C/Users/qiming/phoenixqm/chromium/src/third_party/WebKit/Source/core/html/parser/HTMLTreeBuilder.cpp",
+		"/C/Users/qiming/phoenixqm/chromium/src/third_party/WebKit/Source/core/html/parser/HTMLDocumentParser.cpp",
+		"/C/Users/qiming/phoenixqm/chromium/src/third_party/WebKit/Source/core/html/parser/HTMLTokenizer.cpp",
+		"/E/CS-Books/JavaScript/_phoenixqm/textplay.html",
+		"/Y/current/InfoLandWebApps/media_NTU/datasets/NTU.json",
+		"/C/Users/qiming/phoenixqm/chromium/src/ppapi/cpp/rect.h",
+		"/C/Users/qiming/AppData/Local/Temp/7zO0EC1F5AB/WebEventFactory.cpp",
+		"/C/Users/qiming/AppData/Local/Temp/7zO0EC298CA/ewebkit2.pc.in",
+		"/C/Users/qiming/AppData/Local/Temp/7zO0EC42E08/webkit.py",
+		"/C/Users/qiming/AppData/Local/Temp/7zO0ECA6DE8/do-webcore-rename",
+		"/F/CS-Books/Algorithm/ACM-phoenixqm/code-201608/GraphInCpp/Graph.cpp",
+		"/F/CS-Books/Algorithm/ACM-phoenixqm/code-201608/循环节.cpp",
+		"/F/CS-Books/Algorithm/ACM-phoenixqm/leetcode/leetcode-025. Reverse Nodes in k-Group.cpp",
+		"/F/CS-Books/Algorithm/ACM-phoenixqm/leetcode/leetcode-023. Merge k Sorted Lists.cpp",
+		"/F/CS-Books/Algorithm/ACM-phoenixqm/code-201608/SimNode.cpp",
+		"/F/CS-Books/Algorithm/ACM-phoenixqm/code-201608/IndirectList.cpp",
+		"/F/CS-Books/Algorithm/ACM-phoenixqm/code-201608/WinnerTree.cpp",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/surface3d.html",
+		"/Y/current/InfoLandWebApps/media_SPRING/datasets/Spring.json",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/css/canvas.css",
+		"/Y/current/InfoLandWebApps/media_EDB/datasets/EDB.json",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/radar3d_qm.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/map3d.html",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/radar2d.js",
+		"/F/CS-Books/Algorithm/ACM-phoenixqm/code-201608/bigint-2010.04.30/BigInteger.hh",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/css/radar2d.css",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/surface.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/x3dom/diff.txt",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/x3dom/VS_x3dom_1.6.0.debug.js",
+		"/Y/current/InfoLand2ISOE/media/datasets/ISOE.json",
+		"/I/InfoLand2Pack32_IGD/media/datasets/ISOE.json",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/x3dom/x3dom-full.debug.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/x3dom/IDMMod_x3dom_1.7.debug.js",
+		"/C/Demos/HTML5/ErianDashboard/JavaScriptCommon/jslibs/x3dom-1.6.0-dev/VS_x3dom.debug.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/js/x3dom/x3dom.debug.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/css/surface3d.css",
+		"/C/Demos/HTML5/ATMRI/tmp.js",
+		"/F/History/[中国文学]/[古典名著]/金瓶梅/[金瓶梅研究·文字版·其他]/金瓶梅（崇祯本）回目.txt",
+		"/C/Demos/HTML5/ATMRI/user.css",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/map.html",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/css/surface.css",
+		"/C/Demos/HTML5/ATMRI/RadarServer/config.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/css/map.css",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/surface.html",
+		"/C/Demos/HTML5/ATMRI/DataServer/data_server/mysite2/urls.py",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/data/WSSS.xml",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/radar2d.html",
+		"/C/Demos/Windows/Detours Express 3.0/samples/cping/cping.cpp",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/data/routes.xml",
+		"/C/Demos/HTML5/ATMRI/DataServer/server/server.py",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/img/singaporeMap.svg",
+		"/C/Demos/HTML5/InfoView/init/init.js",
+		"/C/Demos/HTML5/InfoView/public/JavaScriptCommon/InfoView/main.js",
+		"/C/Demos/HTML5/ATMRI/RadarServer/public/radar3d.html",
+		"/C/Demos/HTML5/InfoView/public/JavaScriptCommon/InfoView/InfoView.js",
+		"/C/Demos/HTML5/LDR/css/LDR2.css",
+		"/C/Demos/HTML5/LDR/css/LDR 2.css",
+		"/C/Demos/ATMRI/DataServer/node_modules/connect-multiparty/test/multipart.js",
+		"/C/Demos/HTML5/InfoViewErian/public/JavaScriptCommon/InfoView2/css/pdfview.css",
+		"/C/Demos/HTML5/InfoViewErian/public/css/core.css",
+		"/C/Demos/HTML5/InfoViewErian/server.js"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+			"C:\\Users\\qiming\\phoenixqm\\!Github\\OpenCV-learn\\pedestrian\\CNN",
+			"C:\\Users\\qiming\\phoenixqm\\!Github\\OpenCV-learn\\pedestrian",
+			"C:\\Demos\\HTML5\\ATMRI\\DataServer\\data_server",
+			"C:\\Demos\\HTML5\\InfoViewOpenSG\\SienaWebSocket\\Common",
+			"C:\\Demos\\HTML5\\InfoViewOpenSG",
+			"",
+			"C:\\Users\\qiming\\phoenixqm\\BeeFramework",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"deformation",
+			"cnnbp",
+			"predict",
+			"showboxes",
+			"cnntrain",
+			"logstream",
+			"logAndEmit",
+			"rootFolder",
+			"refresh",
+			"reset",
+			"db.sqlite3",
+			"reqfl",
+			"cellEditScroll2",
+			"initSocketConnection",
+			"socket",
+			"emit",
+			"cellEditApply",
+			"cellEditScroll2",
+			"cellEdit",
+			".logAndEmit",
+			".emit",
+			"logAndEmit",
+			"the3dRadar",
+			"MESSAGE",
+			"VALUE_DELTA",
+			"cellEditScroll2",
+			"isTouchDragging",
+			"applyTouchEnd",
+			"logAndEmit",
+			"applyPanZoom",
+			"panZoom",
+			"applyPanZoom",
+			"cellEditScroll2",
+			"VALUE_DELTA",
+			"delta",
+			"editCell2",
+			"SEND_MESSAGE",
+			"MESSAGE",
+			"generateSendMessage",
+			"message",
+			"rotateX_v0",
+			"updownRot",
+			"updown",
+			"applyMoveCamera",
+			"callsign",
+			"initA",
+			"refresh",
+			"route",
+			"routes",
+			"initInf",
+			"freq =",
+			"freq",
+			"initAircraftInfo",
+			"cell-",
+			"cell-dep",
+			"isDeparture",
+			"isDeparture = ",
+			"AcDict",
+			"initAircraftInfo",
+			"initAllAircraftInfo",
+			"initAircraftInfo",
+			"setupInfoEventAll",
+			"updateAir",
+			"add_aircraft_to_scene",
+			"curr_aircraft_list",
+			"update_scene_aircrafts",
+			"initNewAircrafts",
+			"initAircraftInfo",
+			".info",
+			"setupMouse",
+			"holdDragMove",
+			"mymousemove",
+			"applyPanZoom",
+			"pointer",
+			"AcDict",
+			"New_Aircrafts_Dict",
+			"SIA",
+			"SIA666",
+			"= obj",
+			"onclick",
+			"======",
+			"====",
+			"LEFT_IS_ONleftIsOn",
+			"init3DAircrafts",
+			"toggleW",
+			"initViewpointValues",
+			"resetV",
+			"applyMoveCamera",
+			"drawVerticalPole",
+			"getAttribute",
+			"fireMouseEvent",
+			"select\"",
+			"select",
+			"fireMouseEvent",
+			"mousePosition",
+			"onMouseOver",
+			"140",
+			"onMouseRelease",
+			"myclick",
+			"onclick",
+			"myclick",
+			"fireMouseEvent",
+			"POINTER_OFFSET_X",
+			"click",
+			"fireMouseEvent",
+			"click",
+			"myclick",
+			"applyEnter",
+			"applyCommand",
+			"command",
+			"enter'",
+			"Pole",
+			"pole",
+			"drawVerticalPole",
+			"applyMoveCamera",
+			"window.isMoveCamera",
+			"lookatMouse",
+			"applyMoveCamera",
+			"cameraMoveCount",
+			"updateCenterOfRotation",
+			"cameraMoveCount",
+			"updateCenterOfRotationNew",
+			"function translatePoint(",
+			"translatePoint",
+			"X3DOM",
+			"Center",
+			"7776",
+			"6538"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "pedestrian-cv/pedestrian-cv.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1929,
+								1929
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 414.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 598,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										142,
+										147
+									],
+									[
+										367,
+										372
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								598,
+								598
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 368.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pedestrian/CNN/cnntrain.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3349,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3344,
+								3344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pedestrian/CNN/cnntest.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pedestrian/CNN/cnnff.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 2139.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "pedestrian/CNN/cnnexamples.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 897.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "pedestrian/dbEval/dbEval_new_CaltechTrain.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5106.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-output":
+	{
+		"height": 148.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 148.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ML.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"read-ca",
+				"git\\read-cache.c"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 319.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
